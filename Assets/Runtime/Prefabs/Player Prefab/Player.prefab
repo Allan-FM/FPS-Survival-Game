@@ -173,6 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8301e7b8cc4a234584814992483e1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 10
 --- !u!1 &8050960109501696244
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8050960110191379345}
+  - component: {fileID: 1612864580272344881}
   m_Layer: 0
   m_Name: Look Root
   m_TagString: Untagged
@@ -289,6 +292,28 @@ Transform:
   m_Father: {fileID: 8050960108853180727}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1612864580272344881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050960110191379350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbe48f2aef472e49b5afb487620e23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRoot: {fileID: 8050960108853180727}
+  lookRoot: {fileID: 8050960110191379345}
+  invert: 0
+  canUnlock: 1
+  sensivity: 5
+  smoothSteps: 10
+  smoothWeigth: 0.4
+  rollAngle: 10
+  rollSpeed: 3
+  defaultLookLimits: {x: -70, y: 80}
 --- !u!1001 &481250188397553246
 PrefabInstance:
   m_ObjectHideFlags: 0
