@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
-
     [SerializeField] private float jumpForce = 10f;
+    public float speed;
+
     private float gravity = 20f;
     private float verticalVelocity; 
     private CharacterController characterController;
