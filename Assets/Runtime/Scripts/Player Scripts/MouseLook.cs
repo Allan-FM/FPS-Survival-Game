@@ -56,7 +56,7 @@ public class MouseLook : MonoBehaviour
         lookAngles.y += currentMouseLook.y * sensivity;
         lookAngles.x = Mathf.Clamp(lookAngles.x, defaultLookLimits.x, defaultLookLimits.y);
 
-        // currentRollAngle = 
+        //     currentRollAngle = 
         //     Mathf.Lerp(currentRollAngle, 
         //     Input.GetAxisRaw(MouseAxis.MouseX) * rollAngle, 
         //     rollSpeed * Time.deltaTime);
